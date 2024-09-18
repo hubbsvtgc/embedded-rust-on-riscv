@@ -1,0 +1,8 @@
+[build]
+target = "riscv32imac-unknown-none-elf"
+
+rustflags = [
+
+"-C", "link-dead-code",
+"-C", "link-args=-Thifive1-revb-ram.lscript"
+]
